@@ -1,8 +1,8 @@
 #ifndef __FATAL_HEADER_
 #define __FATAL_HEADER_
 
-//#include <stdio.h>
-//#include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 void FatalError(char *msg)
 {

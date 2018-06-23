@@ -1,6 +1,7 @@
 #include "splaytree.h"
 #include "fatal.h"
 #include <stddef.h>
+#include <stdlib.h>
 
 struct SplayNode
 {
@@ -85,7 +86,7 @@ static Position SingleRotateWithRight(Position K1)
 	Position K2;
 	K2 = K1->right;
 	K1->right = K2->left;
-	K2->left = K2;
+	K2->left = K1;
 	return K2;
 }
 
